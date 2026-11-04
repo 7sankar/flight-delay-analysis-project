@@ -57,7 +57,7 @@ Source: https://www.kaggle.com/datasets/samuelpombourcq/us-flight-delays-and-can
 
 ## How I cleaned it
 
-The cleaning scripts are in `sql/cleaning/`. The main decisions:
+The cleaning scripts are in `sql/cleaning_scripts/`. The main decisions:
 
 - **Cancelled flights have no delay time, so I left those empty instead of filling in 0.** Filling 0 would make cancelled flights look on time and make average delays look better than they are.
 - **Delay causes that were empty became 0**, since a cause is only recorded when a flight is late.
